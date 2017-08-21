@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Solution {
     public static int CountOfDeviders (int n) {
         int result = 1;
-        for (int i = 1 ; i < Math.sqrt (n) ; ++i) {
+        for (int i = 1 ; i <= n/2 ; ++i) {
             if (n % i == 0) ++result;
         }
         return result;
